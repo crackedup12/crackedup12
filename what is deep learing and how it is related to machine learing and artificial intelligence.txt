@@ -1,0 +1,7 @@
+AI is the process of trying to mimic human behaviour or any other living entity.
+
+where as machine learning is the process where we convert the data into numerical form 
+and try to find pattern in those numbers.
+
+deep learning is a type of artificial intelligence and machine learning where
+we try to understand how humans gain certain type of knowledge.
