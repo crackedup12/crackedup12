@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @crackedup12
 - 👀 I’m interested in AIML and trying to learn more about it.
-- 🌱 I’m currently learning tenserflow. Just starting to learn new topics regarding this platform.
+- 🌱 I’m currently learning Anaconda. Just starting to learn new topics regarding this platform.
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me reach me using sayan17bhattacharya@gmail.com.
 
