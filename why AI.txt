@@ -1,0 +1,3 @@
+Let's start this answer by bringing in Moore's law which says the no of transistor on a microchip doubles every two years,hence almost decreasing the price 
+of computer almost half of it's original price. With AI defeating the greatest player in chess and alpha go,AI proves to be better then human .
+I will start learning by developing AI which will help me beat certain games and using the application used in those games to solve real world problems.
