@@ -1,0 +1,30 @@
+neural network
+a computer system modelled on the human brain and nervous system.
+This is a rather bookish defenition. 
+
+To elaborate we need to first convert our unstructured data into numerical encoding
+.using which we will create a neural network based on the given data. And finally
+get our representation data.
+
+using the representation data we will covert it into human understandable language.
+so that it can finally give us our desired output.
+
+anatomy of neural network
+
+.Input layer:- This is where the data goes
+
+.Hidden layer:- This is where the pattern if formed amoung data.
+
+.Output layer:- output learned representation or prediction probability.
+
+Types of learning
+
+.supervised learning:-This is where we get data and label.
+
+.semi-supervied learning:-This is where we have almost same data as supervised learning
+but only have label for some. 
+
+.unsupervised learning:-This is where we only able to find data but no label.
+
+.Transfer learning:-This is the process of gathering pattern from one set of data.And
+using that pattern on another set of data.
