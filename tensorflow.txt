@@ -1,0 +1,15 @@
+Tensorflow helps us to build deep learning models and architecture
+
+what is tenserflow?
+
+.End-to-end platflorm for machine learning
+.write fast deep learning code in python/other accessible language
+.able to access pre-build deep learning models.
+.whole stack: preprocess data,model data,deploy model in your application.
+.originally designed and used in-house by google. 
+
+why tensorflow?
+
+.Easy model building
+.Robust model building anywhere
+.powerful experimentation for research.
