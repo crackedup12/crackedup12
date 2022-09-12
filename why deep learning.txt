@@ -1,0 +1,40 @@
+To answer this question we need to see take the help of an example. while driving a 
+car do we try to find all the set of rules while driving it or we just drive it based
+on our instincts that we gain from driving it from our previous knowledge. 
+complex problems like self driving car cannot be broken down into a set of rules.
+hence traditional algorithm will not work.
+Here is where deep learning comes in.
+
+where to use deep learning
+
+. problems with long list of rules-when the traditional approach fails.
+. enviroments that changes pretty quickly- since deep learning can adapt
+. when large amount of data is required to be studied.
+
+where not to use deep learning
+
+.when you need explainability- patterns learned by deep learning are 
+not interpretbale by humans
+.when traditional approach is a better option.
+.when error are unacceptable-since the output of deep learning model is not always
+predictable
+.when you do not have huge amount of data.
+
+Machine learning is usally used for structured data. 
+whereas deep learning is mostly used for unstructured data like for example voice 
+recognition, identifying food and etc.
+
+some of the most commonly used alogorithm in machine learning
+
+.random forest
+.naive bayes
+.nearest neigbour
+.support vector machine
+...many more
+
+some of the most commonly used alogorithm in deep learning
+.neural networks.
+.fully connected neural network
+.recurrent neural network
+.transormers 
+...many more.
