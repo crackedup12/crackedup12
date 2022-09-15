@@ -1,0 +1,154 @@
+#fundamental concept regarding tenserflow
+More specifically we are going to cover
+* Introduction to Tensors.
+* Getting Information from tensors.
+* Manipulating tensors.
+* Tensors & numpy.
+* using tf.function(to Increase the regular speed of code in python).
+* using GPU with Tensorflow. 
+* exercise to try .
+
+Code cell <916tm3Mf3Oui>
+#%% [code]
+## Introduction to Tensor.
+#import tensorflow
+import tensorflow as tf
+print(tf.__version__)
+Execution output from Sep 15, 2022 4:51 PM
+0KB
+	Stream
+		2.8.2
+
+Code cell <KhFQpgjP4joN>
+#%% [code]
+#create tenserflow with tf.constant()
+#tf. constant is useful for asserting that the value can be embedded that way Creates a constant tensor from a tensor-like object.
+scalar=tf.constant([1, 2, 3, 4, 5, 6])
+scalar
+Execution output from Sep 15, 2022 5:10 PM
+0KB
+	text/plain
+		<tf.Tensor: shape=(6,), dtype=int32, numpy=array([1, 2, 3, 4, 5, 6], dtype=int32)>
+
+Code cell <kt4z_7sU5bQz>
+#%% [code]
+tf.constant([1, 2, 3, 4, 5, 6], dtype=tf.float64)
+
+Execution output from Sep 15, 2022 5:02 PM
+0KB
+	text/plain
+		<tf.Tensor: shape=(6,), dtype=float64, numpy=array([1., 2., 3., 4., 5., 6.])>
+
+Code cell <5qUxfuo16-S->
+#%% [code]
+tf.constant(0,shape=(2,3),dtype=tf.float64)
+Execution output from Sep 15, 2022 5:03 PM
+0KB
+	text/plain
+		<tf.Tensor: shape=(2, 3), dtype=float64, numpy=
+		array([[0., 0., 0.],
+		       [0., 0., 0.]])>
+
+Code cell <n7f6VNA77QxW>
+#%% [code]
+k=tf.constant([1,2,3,4,5,6],shape=(2,3),dtype=tf.float64)
+
+Code cell <ISIaHORe7r6W>
+#%% [code]
+#check the no of dimensions of a tensor.
+scalar.ndim
+Execution output from Sep 15, 2022 5:10 PM
+0KB
+	text/plain
+		1
+
+Code cell <NCeQ5k__8b43>
+#%% [code]
+#let us create a vector
+vector=tf.constant([10,10])
+vector
+Execution output from Sep 15, 2022 5:10 PM
+0KB
+	text/plain
+		<tf.Tensor: shape=(2,), dtype=int32, numpy=array([10, 10], dtype=int32)>
+
+Code cell <88_l5bma8u2e>
+#%% [code]
+vector.ndim
+Execution output from Sep 15, 2022 5:10 PM
+0KB
+	text/plain
+		1
+
+Code cell <gC7dpAhl89df>
+#%% [code]
+matrix=tf.constant([[10,7],[7,10]])
+matrix
+Execution output from Sep 15, 2022 5:12 PM
+0KB
+	text/plain
+		<tf.Tensor: shape=(2, 2), dtype=int32, numpy=
+		array([[10,  7],
+		       [ 7, 10]], dtype=int32)>
+
+Code cell <qKQivWii9ahe>
+#%% [code]
+matrix.ndim
+Execution output from Sep 15, 2022 5:13 PM
+0KB
+	text/plain
+		2
+
+Code cell <OpsGDo-L98cV>
+#%% [code]
+another_matrix=tf.constant([[10,7],[3,2],[8,9]],dtype=tf.float32)
+another_matrix
+Execution output from Sep 15, 2022 5:17 PM
+0KB
+	text/plain
+		<tf.Tensor: shape=(3, 2), dtype=float32, numpy=
+		array([[10.,  7.],
+		       [ 3.,  2.],
+		       [ 8.,  9.]], dtype=float32)>
+
+Code cell <Gu7HSuYS-YZn>
+#%% [code]
+another_matrix.ndim
+Execution output from Sep 15, 2022 5:17 PM
+0KB
+	text/plain
+		2
+
+Code cell <PwsLaGbK-h9->
+#%% [code]
+#let us create a tensor
+tensor=tf.constant([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]],[[13,14,15],[16,17,18]]])
+tensor
+Execution output from Sep 15, 2022 5:24 PM
+0KB
+	text/plain
+		<tf.Tensor: shape=(3, 2, 3), dtype=int32, numpy=
+		array([[[ 1,  2,  3],
+		        [ 4,  5,  6]],
+		
+		       [[ 7,  8,  9],
+		        [10, 11, 12]],
+		
+		       [[13, 14, 15],
+		        [16, 17, 18]]], dtype=int32)>
+
+Code cell <2IHukIZE_y2h>
+#%% [code]
+tensor.ndim
+Execution output from Sep 15, 2022 5:24 PM
+0KB
+	text/plain
+		3
+
+Code cell <XEWLBy-KAIaR>
+#%% [code]
+what we have created so far
+*scalar: a single number
+*vector: a number with direction
+*matrix: a 2-dimensional array of number
+*tensor: an n-dimensional array of numbers(it can have any number of dimensions from zero to infinity)
